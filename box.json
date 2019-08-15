@@ -1,0 +1,23 @@
+{
+    "name":"appStartupReporter",
+    "version":"1.0.0",
+    "author":"Gavin Pickin",
+    "location":"gpickin/appStartupReporter#v1.0.0",
+    "homepage":"https://github.com/gpickin/appStartupReporter",
+    "documentation":"https://github.com/gpickin/appStartupReporter",
+    "repository":{
+        "type":"git",
+        "URL":"https://github.com/gpickin/appStartupReporter"
+    },
+    "bugs":"https://github.com/gpickin/appStartupReporter/issues",
+    "slug":"appStartupReporter",
+    "shortDescription":"Report App Startup information to Sentry for ColdBox Apps",
+    "description":"Report App Startup information to Sentry for ColdBox Apps",
+    "type":"modules",
+    "dependencies":{},
+    "scripts":{
+        "postVersion":"package set location='gpickin/appStartupReporter#v`package version`' && echo 'v`package version`' > .version && !git add .version && !git commit -m \"Bump the Version\"",
+        "onRelease":"publish",
+        "postPublish":"!git push && !git push --tags"
+    }
+}
