@@ -11,7 +11,7 @@ component extends="coldbox.system.Interceptor"{
 		var sentryService = getWireBox().getInstance( 'SentryService@sentry' );
 		sentryService.captureMessage(
 			message="App Version #getVersion()# started on #getHostName()# - #getEnvironment()# environment",
-			level="info",
+			level="error",
 			additionalData = {
 				"environment"	:	getEnvironment(),
 				"hostname"		:	getHostName(),
