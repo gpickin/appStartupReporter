@@ -1,8 +1,8 @@
 {
     "name":"appStartupReporter",
-    "version":"1.0.2",
+    "version":"1.0.3",
     "author":"Gavin Pickin",
-    "location":"gpickin/appStartupReporter#v1.0.2",
+    "location":"gpickin/appStartupReporter#v1.0.3",
     "homepage":"https://github.com/gpickin/appStartupReporter",
     "documentation":"https://github.com/gpickin/appStartupReporter",
     "repository":{
