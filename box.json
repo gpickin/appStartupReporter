@@ -1,8 +1,8 @@
 {
     "name":"appStartupReporter",
-    "version":"1.0.3",
+    "version":"1.3.0",
     "author":"Gavin Pickin",
-    "location":"gpickin/appStartupReporter#v1.0.3",
+    "location":"gpickin/appStartupReporter#v1.3.0",
     "homepage":"https://github.com/gpickin/appStartupReporter",
     "documentation":"https://github.com/gpickin/appStartupReporter",
     "repository":{
@@ -16,7 +16,7 @@
     "type":"modules",
     "dependencies":{},
     "scripts":{
-        "postVersion":"package set location='gpickin/appStartupReporter#v`package version`' && echo 'v`package version`' > .version && !git add .version && !git commit -m \"Bump the Version\"",
+        "postVersion":"package set location='gpickin/appStartupReporter#v`package version`' && echo 'v`package version`' > .version && !git add .version && git commit -m \"Bump the Version\"",
         "onRelease":"publish",
         "postPublish":"!git push && !git push --tags"
     }
